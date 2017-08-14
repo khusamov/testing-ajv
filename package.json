@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/khusamov/testing-ajv#readme",
   "dependencies": {
-    "ajv": "^5.2.2"
+    "ajv": "^5.2.2",
+    "lodash": "^4.17.4"
   }
 }
