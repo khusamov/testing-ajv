@@ -1,16 +1,16 @@
 var Ajv = require('ajv');
-var ajv = new Ajv({allErrors: true});
+var ajv = new Ajv({ allErrors: true });
 
 var firstSchema = {
-    "id": "http://localhost:1234/first.json",
+    "id": "/folder2/first.json",
     "type": "string"
 };
 
 var secondSchema = {
-    "id": "http://localhost:1234/second.json",
+    "id": "/folder1/second.json",
     "type": "object",
     "properties": {
-        "first": { "$ref": "first.json" }
+        "first": { "$ref": "/folder2/first.json" }
     }
 };
 
