@@ -25,7 +25,7 @@ ajv.addKeyword('nullable', {
 
 ajv.addKeyword('constant', { validate: function (schema, data) {
 	return typeof schema == 'object' && schema !== null
-		? _.eq(schema, data)
+		? _.isEqual(schema, data)
 		: schema === data;
 }, errors: false });
 
